@@ -38,7 +38,7 @@ interface ButtonWithIndex extends Button {
 interface GroupedButtons extends Array<Group> {}
 
 const InventoryContext: React.FC = () => {
-  const contextMenu = useAppSelector((state) => state.inventory.contextMenu);
+  const contextMenu = useAppSelector((state) => state.contextMenu);
   const item = contextMenu.item;
   const dispatch = useAppDispatch();
 
